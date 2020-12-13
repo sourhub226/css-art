@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 dots preloader 2</title>
+</head>
+
+<body>
+
+    <div class="load">
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+    </div>
+
+</body>
+
+</html>
+
+
+
+<style>
+    body {
+        margin: auto;
+        display: flex;
+    }
+
+    .load {
+        margin: auto;
+    }
+
+    .load hr {
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        animation: spin 2s ease infinite;
+        top: 40vh;
+        left: calc(50% - 40px);
+    }
+
+    .load hr:nth-child(1) {
+        background-color: #333;
+        animation-delay: -1.5s;
+    }
+
+    .load hr:nth-child(2) {
+        background-color: #f93;
+        animation-delay: -1s;
+    }
+
+    .load hr:nth-child(3) {
+        background-color: #333;
+        animation-delay: -0.5s;
+    }
+
+    .load hr:nth-child(4) {
+        background-color: #f93;
+    }
+
+    @keyframes spin {
+
+        0%,
+        100% {
+            transform: translate(0);
+        }
+
+        25% {
+            transform: translate(160%);
+        }
+
+        50% {
+            transform: translate(160%, 160%);
+        }
+
+        75% {
+            transform: translate(0, 160%);
+        }
+    }
+
+</style>

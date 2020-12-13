@@ -1,0 +1,79 @@
+:root {
+    --bgcolor: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-rendering: optimizeSpeed;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+footer {
+    background-color: var(--bgcolor);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+header h1 {
+    font-weight: 400;
+}
+
+.cards-section {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--bgcolor);
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+}
+
+.text {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 3px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+footer p a {
+    color: black;
+    font-weight: 400;
+}
