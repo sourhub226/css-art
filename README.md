@@ -2,6 +2,6 @@
 
 ### A collection of cool animated elements built using CSS and a bit of JS only!
 
-This collection includes preloaders, menu button animations, animated popup cards, page background animations and much more...
+This collection includes animated preloaders, menu buttons, popup cards, page backgrounds and much more...
 
 Preview: https://sourhub226.github.io/css-animations/
