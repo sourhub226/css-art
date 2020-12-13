@@ -1,15 +1,16 @@
 :root {
-    --bgcolor: #f5f5f5;
+    --card-bg: #333;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #333333;
+    color: #bbb;
 }
 
 body {
+    background-color: #222;
     font-family: 'Ubuntu', sans-serif;
     text-rendering: optimizeSpeed;
     overflow-x: hidden;
@@ -21,7 +22,7 @@ a {
 
 header,
 footer {
-    background-color: var(--bgcolor);
+    background-color: var(--card-bg);
     text-align: center;
     margin: 20px;
     padding: 20px;
@@ -40,15 +41,24 @@ header h1 {
 }
 
 .card {
-    background-color: var(--bgcolor);
+    background-color: var(--card-bg);
     width: 300px;
     height: 250px;
     margin: 10px;
     border-radius: 20px;
     overflow: hidden;
+    transition: 0.3s ease;
 }
 
-.image {
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card:hover .card-text {
+    background-color: #111;
+}
+
+.card-image {
     height: 75%;
     display: flex;
     justify-content: center;
@@ -56,15 +66,16 @@ header h1 {
     overflow: hidden;
 }
 
-.image img {
+.card-image img {
     width: 100%;
 }
 
-.text {
+.card-text {
     height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s ease;
 }
 
 footer p {
@@ -74,6 +85,6 @@ footer p {
 }
 
 footer p a {
-    color: black;
+    color: #ddd;
     font-weight: 400;
 }
