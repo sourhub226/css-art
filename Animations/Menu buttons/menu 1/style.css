@@ -1,0 +1,48 @@
+body {
+    margin: auto;
+}
+
+.menu-btn-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.menu-btn {
+    margin: auto;
+    background-color: dodgerblue;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.menu-btn div {
+    background-color: white;
+    width: 33px;
+    height: 4px;
+    border-radius: 100em;
+    margin: 7px 0;
+    transition: all 0.5s ease;
+}
+
+.menu-btn div:nth-child(1) {
+    transform-origin: top left;
+    margin: auto;
+}
+
+.menu-btn div:nth-child(3) {
+    transform-origin: bottom left;
+    margin: auto;
+}
+
+.menu-btn.open div:nth-child(1) {
+    transform: translateX(7px) rotate(45deg);
+}
+
+.menu-btn.open div:nth-child(2) {
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+.menu-btn.open div:nth-child(3) {
+    transform: translateX(7px) rotate(-45deg);
+}
