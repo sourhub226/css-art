@@ -6,13 +6,19 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-checkbox {
+    display: none;
 }
 
 .menu-btn {
-    margin: auto;
     background-color: hotpink;
     padding: 24px 26px;
     cursor: pointer;
+    position: relative;
 }
 
 .ham-menu,
@@ -22,48 +28,48 @@ body {
 
 .cross {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 47%;
+    left: 30%;
+    right: 30%;
     transform: scale(0);
     opacity: 0;
 }
 
 .ham-menu div,
 .cross div {
-    background-color: white;
+    background-color: black;
     width: 33px;
     height: 4px;
     border-radius: 100em;
-    transition: all 0.5s ease;
-}
-
-.cross div {
-    background-color: white;
-    position: absolute;
-}
-
-.cross div:nth-child(1) {
-    transform: rotate(45deg);
-}
-
-.cross div:nth-child(2) {
-    transform: rotate(-45deg);
 }
 
 .ham-menu div {
     margin: 6px 0;
 }
 
-.ham-menu.open {
+.cross div {
+    position: absolute;
+}
+
+.cross div:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.cross div:nth-child(2) {
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+
+
+#menu-checkbox:checked + label .ham-menu {
     transform: scale(2);
     opacity: 0;
 }
 
 
-.cross.open {
+#menu-checkbox:checked + label .cross {
     transform: scale(1);
     opacity: 1;
 }

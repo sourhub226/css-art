@@ -6,10 +6,15 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-checkbox {
+    display: none;
 }
 
 .menu-btn {
-    margin: auto;
     background-color: firebrick;
     padding: 24px 29px;
     cursor: pointer;
@@ -25,14 +30,14 @@ body {
 }
 
 
-.menu-btn.open div:nth-child(1) {
+#menu-checkbox:checked + label .menu-btn div:nth-child(1) {
     transform: translateY(11px) rotate(45deg);
 }
 
-.menu-btn.open div:nth-child(2) {
+#menu-checkbox:checked + label .menu-btn div:nth-child(2) {
     transform: rotate(135deg);
 }
 
-.menu-btn.open div:nth-child(3) {
+#menu-checkbox:checked + label .menu-btn div:nth-child(3) {
     transform: translateY(-11px) rotate(45deg);
 }
