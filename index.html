@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Animations</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header data-aos="fade-down">
         <h1>CSS Animations</h1>
     </header>
 
-    <div class="cards-section">
+    <div class="cards-section" data-aos="zoom-in">
         <a href="Animations/Preloaders/Microsoft inspired/microsoft.html" class="card">
             <div class="card-image"><img src="https://i.imgur.com/umtNGon.gif"></div>
             <div class="card-text">Preloader - Microsoft inspired</div>
@@ -71,10 +72,14 @@
     </div>
     <footer>
         <p>By Sourabh Sathe</p>
-        <p>Checkout my other stuff on Github!<a href="https://github.com/sourhub226">@sourhub226</a></p>
+        <p>Checkout my other stuff on Github! <a href="https://github.com/sourhub226">@sourhub226</a></p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
 
+    </script>
 </body>
 
 </html>

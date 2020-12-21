@@ -1,12 +1,12 @@
 :root {
-    --card-bg: #333;
+    --card-bg: linear-gradient(109.6deg, rgb(78, 70, 255) 11.2%, rgb(216, 0, 255) 91.1%);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #bbb;
+    color: #eee;
 }
 
 body {
@@ -22,15 +22,17 @@ a {
 
 header,
 footer {
-    background-color: var(--card-bg);
+    background-image: var(--card-bg);
     text-align: center;
     margin: 20px;
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 20px;
 }
 
 header h1 {
+    font-family: 'Rancho', cursive;
     font-weight: 400;
+    font-size: 40px;
 }
 
 .cards-section {
@@ -41,7 +43,7 @@ header h1 {
 }
 
 .card {
-    background-color: var(--card-bg);
+    background-image: var(--card-bg);
     width: 300px;
     height: 250px;
     margin: 10px;
@@ -81,10 +83,10 @@ header h1 {
 footer p {
     margin: 3px;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 footer p a {
-    color: #ddd;
+    color: #fff;
     font-weight: 400;
 }
