@@ -1,0 +1,57 @@
+body {
+    margin: auto;
+}
+
+.heart-container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(119, 7, 160, 0.83) 0%, rgb(0, 0, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart div {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin-top: 10px;
+}
+
+.heart div::before,
+.heart div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: red;
+}
+
+.heart div::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart div::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.heart {
+    position: absolute;
+}
+
+.heart.back {
+    animation: pulse 0.7s ease infinite;
+}
+
+@keyframes pulse {
+    to {
+        opacity: 0;
+        transform: translateY(-1px) scale(1.4);
+    }
+}
