@@ -35,49 +35,33 @@ header h1 {
     font-size: 40px;
 }
 
-.cards-section {
+.pen-section {
     padding: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.card {
+.pen {
     background-image: var(--card-bg);
-    width: 300px;
-    height: 250px;
-    margin: 10px;
     border-radius: 20px;
-    overflow: hidden;
-    transition: 0.3s ease;
+    width: 500px;
+    margin: 10px;
+    height: 400px;
 }
 
-.card:hover {
-    transform: scale(1.1);
+.pen iframe {
+    padding: 10px;
+    height: 90%;
 }
 
-.card:hover .card-text {
-    background-color: #111;
-}
-
-.card-image {
-    height: 75%;
+.pen-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-}
-
-.card-image img {
-    width: 100%;
-}
-
-.card-text {
-    height: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.2s ease;
+    padding: 15px;
+    padding-top: 0;
+    height: 9%;
 }
 
 footer p {
@@ -86,7 +70,15 @@ footer p {
     font-weight: 300;
 }
 
-footer p a {
-    color: #fff;
-    font-weight: 400;
+.social-links {
+    width: 100px;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-btn i {
+    font-size: 30px;
 }
