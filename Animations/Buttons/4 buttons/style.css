@@ -1,0 +1,107 @@
+body {
+    margin: auto;
+}
+
+.button-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cross,
+.btn,
+.btn i,
+.cross::after,
+.cross::before {
+    transition: all 0.2s ease;
+}
+
+.cross {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cross::after,
+.cross::before {
+    content: "";
+    background-color: rgb(0, 118, 232);
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.cross::before {
+    transform: rotate(90deg);
+}
+
+.cross:hover {
+    transform: rotate(45deg);
+    width: 120px;
+    height: 120px;
+
+}
+
+.cross:hover::before,
+.cross:hover::after {
+    width: 4px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: dodgerblue;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cross:hover .btn {
+    border-radius: 50px;
+}
+
+.cross:hover .btn1 {
+    transform: translate(-12px, -5px);
+}
+
+.cross:hover .btn2 {
+    transform: translate(12px, -5px);
+}
+
+.cross:hover .btn3 {
+    transform: translate(-12px, 5px);
+}
+
+.cross:hover .btn4 {
+    transform: translate(12px, 5px);
+}
+
+.btn i {
+    color: white;
+    opacity: 0.5;
+}
+
+.cross:hover .btn i {
+    transform: rotate(-45deg);
+    opacity: 1;
+}
+
+.btn:hover {
+    background-color: #0064c6;
+}

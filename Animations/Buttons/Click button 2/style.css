@@ -1,0 +1,53 @@
+body {
+    margin: auto;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.button-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid black;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 3px 0px black;
+    cursor: pointer;
+    background-color: white;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+    clip-path: circle();
+    transform: scale(3.2);
+    opacity: 0;
+    mix-blend-mode: difference;
+}
+
+.button:active::before {
+    transform: scale(0);
+    opacity: 1;
+    transition: 0s;
+}
+
+.button:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
