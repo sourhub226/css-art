@@ -1,130 +1,121 @@
 body {
-    margin: auto;
+  margin: auto;
 }
 
 .menu-btn-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #menu-checkbox {
-    display: none;
+  display: none;
 }
 
 .menu-btn {
-    background-color: palegreen;
-    padding: 30px;
-    cursor: pointer;
+  background-color: palegreen;
+  padding: 30px;
+  cursor: pointer;
 }
 
 .menu-btn div {
-    background-color: black;
-    width: 33px;
-    height: 4px;
-    border-radius: 100em;
-    margin: 7px 0;
-    transition: all 0.5s ease-in-out;
+  background-color: black;
+  width: 33px;
+  height: 4px;
+  border-radius: 100em;
+  margin: 7px 0;
 }
 
 .menu-btn div:nth-child(1) {
-    margin: auto;
-    animation: closeup 1s ease;
-    animation-fill-mode: forwards;
+  margin: auto;
+  animation: closeup 0.5s ease;
+  animation-fill-mode: forwards;
 }
 
 .menu-btn div:nth-child(2) {
-    animation: closemiddle 1s ease;
-    animation-fill-mode: forwards;
+  animation: closemiddle 0.5s ease;
+  animation-fill-mode: forwards;
 }
 
 .menu-btn div:nth-child(3) {
-    margin: auto;
-    animation: closedown 1s ease;
-    animation-fill-mode: forwards;
+  margin: auto;
+  animation: closedown 0.5s ease;
+  animation-fill-mode: forwards;
 }
 
-
-
 #menu-checkbox:checked + label .menu-btn div:nth-child(1) {
-    animation: opendown 1s ease;
-    animation-fill-mode: forwards;
+  animation: opendown 0.5s ease;
+  animation-fill-mode: forwards;
 }
 
 #menu-checkbox:checked + label .menu-btn div:nth-child(2) {
-    animation: openmiddle 1s ease;
-    animation-fill-mode: forwards;
+  animation: openmiddle 0.5s ease;
+  animation-fill-mode: forwards;
 }
 
 #menu-checkbox:checked + label .menu-btn div:nth-child(3) {
-    animation: openup 1s ease;
-    animation-fill-mode: forwards;
+  animation: openup 0.5s ease;
+  animation-fill-mode: forwards;
 }
 
-
 @keyframes opendown {
-    50% {
-        transform: translateY(11px);
-    }
+  50% {
+    transform: translateY(11px);
+  }
 
-    100% {
-        transform: translateY(11px) rotate(45deg);
-    }
-
+  100% {
+    transform: translateY(11px) rotate(45deg);
+  }
 }
 
 @keyframes openmiddle {
-    50% {
-        transform: scale(1);
-    }
+  50% {
+    transform: scale(1);
+  }
 
-    100% {
-        transform: scale(0);
-    }
+  100% {
+    transform: scale(0);
+  }
 }
 
 @keyframes openup {
-    50% {
-        transform: translateY(-11px);
-    }
+  50% {
+    transform: translateY(-11px);
+  }
 
-    100% {
-        transform: translateY(-11px) rotate(-45deg);
-    }
-
+  100% {
+    transform: translateY(-11px) rotate(-45deg);
+  }
 }
 
-
-
 @keyframes closeup {
-    0% {
-        transform: translateY(11px) rotate(45deg);
-    }
+  0% {
+    transform: translateY(11px) rotate(45deg);
+  }
 
-    50% {
-        transform: translateY(11px) rotate(0);
-    }
+  50% {
+    transform: translateY(11px) rotate(0);
+  }
 }
 
 @keyframes closemiddle {
-    0% {
-        transform: scale(0);
-    }
+  0% {
+    transform: scale(0);
+  }
 
-    50% {
-        transform: scale(1);
-    }
+  50% {
+    transform: scale(1);
+  }
 }
 
 @keyframes closedown {
-    0% {
-        transform: translateY(-11px) rotate(-45deg);
-    }
+  0% {
+    transform: translateY(-11px) rotate(-45deg);
+  }
 
-    50% {
-        transform: translateY(-11px) rotate(0);
-    }
+  50% {
+    transform: translateY(-11px) rotate(0);
+  }
 }
