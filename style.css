@@ -48,11 +48,13 @@ header h1 {
     width: 400px;
     margin: 10px;
     height: 400px;
+    
 }
 
 .pen iframe {
     padding: 10px;
     height: 90%;
+    border-radius: 30px;
 }
 
 .pen-text {
