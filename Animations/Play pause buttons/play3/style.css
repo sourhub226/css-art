@@ -1,9 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    
-}
-body{
+body {
     margin: auto;
 }
 
@@ -20,8 +15,8 @@ body{
 }
 
 .play-btn {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     display: flex;
     justify-content: center;
@@ -32,15 +27,14 @@ body{
 }
 
 .shape {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     transition: all 0.4s ease;
     background-color: #fff;
 }
 
 .square1 {
-    top:59.5px;
     clip-path: polygon(20% 50%, 100% 50%, 20% 100%, 20% 50%);
 }
 
@@ -49,7 +43,6 @@ body{
 }
 
 #btn-checkbox:checked + label .square1 {
-    top:60px;
     clip-path: polygon(10% 0%, 40% 0%, 40% 100%, 10% 100%);
 }
 

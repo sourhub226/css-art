@@ -15,8 +15,8 @@ body {
 }
 
 .play-btn {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background: linear-gradient(to right, #00c6ff, #0072ff);
     display: flex;
     justify-content: center;
@@ -27,15 +27,14 @@ body {
 }
 
 .shape {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     transition: all 0.4s ease;
     background-color: #fff;
 }
 
 .square1 {
-    top:59.5px;
     clip-path: polygon(20% 50%, 100% 50%, 20% 100%, 20% 50%);
 }
 
@@ -44,7 +43,6 @@ body {
 }
 
 #btn-checkbox:checked + label .square1 {
-    top:60px;
     transform: rotate(90deg);
     clip-path: polygon(0% 60%, 100% 60%, 100% 90%, 0% 90%);
 }
