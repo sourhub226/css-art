@@ -16,7 +16,6 @@ body {
     overflow-x: hidden;
 }
 
-
 header,
 footer {
     background-image: var(--card-bg);
