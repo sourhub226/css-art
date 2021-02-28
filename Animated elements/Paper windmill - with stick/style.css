@@ -9,27 +9,27 @@ body {
 
 .stick {
     position: relative;
+    background-color: #e5e5e5;
 }
 
 .stick::after {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: #e5e5e5;
+    width: 45px;
+    height: 45px;
+    background-color: inherit;
     border-radius: 50%;
-    transform: translate(-50%, -135px);
+    transform: translate(-50%, -140px);
     z-index: 2;
 }
 
 .stick::before {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 350px;
-    background-color: #e5e5e5;
-    top: 0;
-    transform: translate(-50%, -135px);
+    width: 30px;
+    height: 430px;
+    background-color: inherit;
+    transform: translate(-50%, -140px);
     border-radius: 20px;
 }
 
@@ -38,7 +38,6 @@ body {
     transform-origin: 0 -120px;
     position: relative;
     z-index: 1;
-    transform: scale(0.6);
 }
 
 .wing {
@@ -102,6 +101,6 @@ body {
 
 @keyframes rotate360 {
     to {
-        transform: scale(0.6) rotate(360deg);
+        transform: rotate(360deg);
     }
 }
