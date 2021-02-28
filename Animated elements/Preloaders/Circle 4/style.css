@@ -1,0 +1,36 @@
+body{
+    margin: auto;
+}
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+.outer{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.inner{
+    width: 100px;
+    height: 90px;
+    background-color: #222;
+    border-radius: 50% 20px;
+    animation: rotate360 0.8s linear infinite;
+}
+
+@keyframes rotate360{
+    to{
+        transform: rotate(360deg);
+    }
+}

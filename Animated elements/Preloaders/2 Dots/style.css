@@ -1,0 +1,33 @@
+body{
+    margin: auto;
+}
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 100px;
+    background-color: #1E1F26;
+}
+
+.dot{
+    background-color: #278ce2;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    border-radius: 50%;
+    animation: move 0.5s ease-in-out infinite;
+}
+
+.dot:nth-child(2){
+    background-color: #FF5394;
+}
+
+@keyframes move{
+    to{
+        transform: translateX(calc(var(--d) * 44px));
+        filter: hue-rotate(calc(var(--d) * 120deg));
+    }
+}

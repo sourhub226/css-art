@@ -1,0 +1,28 @@
+body{
+    margin: auto;
+}
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D1E22;
+}
+
+.block{
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    animation: moveupdown 0.8s ease-in-out infinite;
+    animation-delay: calc(-0.6s * var(--b));
+    margin: 10px;
+    filter: hue-rotate(calc(70deg * var(--b)));
+}
+
+@keyframes moveupdown{
+    50%{
+        transform: translateY(-40px);
+    }
+}
