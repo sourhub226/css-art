@@ -1,0 +1,89 @@
+body {
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.windmill {
+    animation: rotate360 1.5s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.6);
+}
+
+.windmill::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: #efefef;
+    border-radius: 50%;
+}
+
+.wing {
+    height: 100px;
+    width: 100px;
+    perspective: 50px;
+    position: absolute;
+    transform: rotate(calc(90deg * var(--w))) translate(140px, -107px);
+}
+
+.wing::before {
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 150px;
+    border-top-right-radius: 220px 245px;
+    left: -90px;
+    top: 7px;
+}
+
+.wing::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50% 50% 0 0;
+    transform: rotateX(40deg);
+}
+
+#wing1::before {
+    background-color: #099686;
+}
+
+#wing1::after {
+    background-color: #47c4b7;
+}
+
+#wing2::before {
+    background-color: #21b2d1;
+}
+
+#wing2::after {
+    background-color: #6fdaf1;
+}
+
+#wing3::before {
+    background-color: #df2c2c;
+}
+
+#wing3::after {
+    background-color: #fa5655;
+}
+
+#wing4::before {
+    background-color: #f99134;
+}
+
+#wing4::after {
+    background-color: #fbe158;
+}
+
+@keyframes rotate360 {
+    to {
+        transform: scale(0.6) rotate(360deg);
+    }
+}
