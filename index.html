@@ -330,7 +330,9 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            easing: 'ease-out',
+        });
         var pen_frames = document.getElementsByClassName("codepen");
         for (let frame of pen_frames) {
             frame.setAttribute("data-height", "400");
@@ -340,7 +342,7 @@
         }
 
     </script>
-    <script defer src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 </body>
 
 </html>
