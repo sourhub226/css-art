@@ -24,7 +24,7 @@ footer {
 }
 
 header {
-    margin: 20px 15px 0px 15px;
+    margin: 20px 15px 0;
     padding: 15px 20px;
 }
 
@@ -56,12 +56,12 @@ header h1 {
 }
 
 .pen-text{
-    margin: 10px 0 0 0;
+    margin: 10px 0 0;
     text-align: center;
 }
 
 footer {
-    margin: 0px 15px 20px 15px;
+    margin: 0 15px 20px;
     padding: 10px 20px;
 }
 
