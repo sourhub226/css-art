@@ -1,84 +1,94 @@
 :root {
-    --card-bg: linear-gradient(109.6deg, rgb(78, 70, 255) 11.2%, rgb(216, 0, 255) 91.1%);
+	--card-bg: linear-gradient(
+		109.6deg,
+		rgb(78, 70, 255) 11.2%,
+		rgb(216, 0, 255) 91.1%
+	);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: #eee;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: #eee;
 }
 
 body {
-    background-color: #1D1F21;
-    font-family: 'Ubuntu', sans-serif;
-    text-rendering: optimizeSpeed;
-    overflow-x: hidden;
+	background-color: #1d1f21;
+	font-family: "Ubuntu", sans-serif;
+	text-rendering: optimizeSpeed;
+	overflow-x: hidden;
+}
+
+.container {
+	margin: auto;
+	max-width: 1300px;
+	width: 100%;
 }
 
 header,
 footer {
-    background-image: var(--card-bg);
-    text-align: center;
-    border-radius: 20px;
+	background-image: var(--card-bg);
+	text-align: center;
+	border-radius: 20px;
 }
 
 header {
-    margin: 20px 15px 0;
-    padding: 15px 20px;
+	margin: 20px 27px 0;
+	padding: 15px 20px;
 }
 
 header h1 {
-    font-family: 'Rancho', cursive;
-    font-weight: 400;
-    font-size: 40px;
+	font-family: "Rancho", cursive;
+	font-weight: 400;
+	font-size: 40px;
 }
 
 .pen-section {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .pen {
-    background-image: var(--card-bg);
-    border-radius: 20px;
-    width: 400px;
-    height: 500px;
-    margin: 10px;
-    padding: 10px;
+	background-image: var(--card-bg);
+	border-radius: 20px;
+	width: 400px;
+	height: 500px;
+	margin: 10px;
+	padding: 10px;
 }
 
-.pen-frame{
-    border-radius: 15px;
-    overflow: hidden;
+.pen-frame {
+	border-radius: 15px;
+	overflow: hidden;
 }
 
-.pen-text{
-    margin: 10px 0 0;
-    text-align: center;
+.pen-text {
+	margin: 10px 0 0;
+	text-align: center;
 }
 
 footer {
-    margin: 0 15px 20px;
-    padding: 10px 20px;
+	margin: 0 15px 20px;
+	padding: 10px 20px;
 }
 
 footer p {
-    margin: 3px;
-    font-size: 15px;
-    font-weight: 300;
+	margin: 3px;
+	font-size: 15px;
+	font-weight: 300;
 }
 
 .social-links {
-    width: 100px;
-    margin: auto;
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
+	width: 100px;
+	margin: auto;
+	padding: 5px;
+	display: flex;
+	justify-content: space-around;
 }
 
 .link-btn i {
-    font-size: 30px;
+	font-size: 30px;
 }
