@@ -55,7 +55,7 @@ body {
 #btn-checkbox:checked + label .button::after {
     content: "ON";
     left: 10px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-right: 10px;
     color: #4CCA61;
 }

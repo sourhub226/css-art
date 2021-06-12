@@ -20,7 +20,7 @@ body{
     height: 220px;
     transform: translate(-50%,-30%) rotateX(82deg);
     border-radius: 100%;
-    box-shadow: 0px 90px 0 30px #444;
+    box-shadow: 0 90px 0 30px #444;
 }
 
 .btn-base::after{
@@ -29,7 +29,7 @@ body{
     width: 150px;
     height: 140px;
     border-radius: 100%;
-    box-shadow: 0px 40px 0 10px #888;
+    box-shadow: 0 40px 0 10px #888;
     transform: translate(-50%,-20%) rotateX(80deg);
 }
 

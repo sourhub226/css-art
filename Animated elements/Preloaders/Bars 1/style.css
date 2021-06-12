@@ -30,6 +30,6 @@ body {
 @keyframes load {
     to {
         opacity: 0;
-        box-shadow: 0px 0px 100px 30px #508df4, 0px 0px 10px #508df4 inset;
+        box-shadow: 0 0 100px 30px #508df4, 0 0 10px #508df4 inset;
     }
 }

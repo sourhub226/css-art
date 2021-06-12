@@ -39,7 +39,7 @@ body {
 }
 
 .button-front:active{
-    transform: translate(0px,0px);
+    transform: translate(0,0);
 }
 
 .button-front:active + .button-back{

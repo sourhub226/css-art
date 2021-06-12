@@ -23,7 +23,7 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    box-shadow: 3px 3px 0px white;
+    box-shadow: 3px 3px 0 white;
     cursor: pointer;
     background-color: black;
     
