@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>neo circle light</title>
+		<style>
+			body {
+				margin: 0;
+				width: 100%;
+				min-height: 100vh;
+				display: flex;
+				background-color: #efefef;
+			}
+			.circle {
+				margin: auto;
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+				display: flex;
+				animation: rotate 1s linear infinite;
+				box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7) inset,
+					2px 2px 5px rgba(0, 0, 0, 0.15);
+			}
+
+			.circle::after {
+				content: "";
+				display: block;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				margin: 7px auto;
+				box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.5) inset,
+					2px 2px 5px rgba(0, 0, 0, 0.15);
+			}
+
+			@keyframes rotate {
+				to {
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="circle"></div>
+	</body>
+</html>

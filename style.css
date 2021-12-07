@@ -66,8 +66,11 @@ header h1 {
 }
 
 .pen-text {
-	margin: 10px 0 0;
+	margin: 10px;
 	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 footer {
